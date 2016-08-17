@@ -1,0 +1,42 @@
+.container {
+  display: table;
+  font-size: 12px;
+}
+
+.button {
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: table-cell;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  width: 94px;
+}
+
+.button.liked {
+  background: #333;
+}
+
+.thumbs-up {
+  color: #333;
+  margin-right: 6px;
+}
+
+.thumbs-up.liked {
+  color: #fff;
+}
+
+.label {
+  color: #333;
+}
+.label.liked {
+  color: #fff;
+}
+
+.likes-count {
+  display: table-cell;
+  padding-left: 10px;
+  vertical-align: middle;
+}

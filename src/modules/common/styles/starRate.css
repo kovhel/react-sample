@@ -1,0 +1,25 @@
+.star {
+  font-size: 32px;
+  margin-right: 6px;
+  cursor: pointer;
+
+  &:last-child {
+     margin-right: 0;
+  }
+
+  &:hover {
+    color: #fecb6e;
+
+    &:before {
+      content: "\f005" !important;
+    }
+  }
+}
+
+.active {
+  color: #fecb6e;
+}
+
+.empty {
+  color: #CFCFCF;
+}

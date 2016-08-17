@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": ["flowtype"],
+  "rules": {
+    "max-len": 0,
+    "no-nested-ternary": 0,
+    "react/prop-types": 0
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  }
+}
