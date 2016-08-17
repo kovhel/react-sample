@@ -7,11 +7,13 @@ new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true,
-}).listen(5000, 'localhost', (err, result) => {
+  // we need https for CORS
+  https: true,
+}).listen(3000, 'localhost', (err, result) => {
   if (err) {
     return console.log(err);
   }
 
-  console.log('Listening at https://localhost:5000/');
-  open('https://localhost:5000/');
+  console.log('Listening at https://localhost:3000/');
+  open('https://localhost:3000/');
 });
