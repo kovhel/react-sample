@@ -35,7 +35,7 @@ class LikeButton extends React.Component {
   };
 
   render() {
-    const likesCount = <div className={styles.likesCount}>{this.props.likesCount} people like this</div>;
+    const likesCount = <div className={styles.likesCount}>{this.props.isLiked ? 1 : 0} people like this</div>;
 
     if (this.state.status === 'waiting') {
       return (
